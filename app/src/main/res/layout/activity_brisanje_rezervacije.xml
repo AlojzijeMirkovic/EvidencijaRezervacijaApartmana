@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unios.ferit.alojzijemirkovic.evidencijarezervacija.BrisanjeRezervacije">
+
+    <TextView
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Za brisanje rezervacije upišite ID"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id rezervacije"
+        android:id="@+id/idrez"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/up"/>
+
+    <EditText
+        android:id="@+id/idRezervacije"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/idrez"
+        android:layout_alignBottom="@+id/idrez"
+        android:layout_toEndOf="@+id/idrez"
+        android:layout_toRightOf="@+id/idrez"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>

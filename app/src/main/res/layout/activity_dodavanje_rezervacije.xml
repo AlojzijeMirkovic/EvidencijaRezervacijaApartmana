@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unios.ferit.alojzijemirkovic.evidencijarezervacija.DodavanjeRezervacije">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apartman"
+        android:id="@+id/apartman"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum dolaska"
+        android:id="@+id/datumDolaska"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/apartman"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum odlaska"
+        android:id="@+id/datumOdlaska"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/datumDolaska"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ime i prezime"
+        android:id="@+id/tv_ime"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/datumOdlaska"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontakt"
+        android:id="@+id/tv_kontakt"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_ime"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broj osoba"
+        android:id="@+id/tv_brojosoba"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_kontakt"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tv_napomena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_brojosoba"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Napomena"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/datumDolaskaP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/datumDolaska"
+        android:layout_alignBottom="@+id/datumDolaska"
+        android:layout_alignLeft="@+id/datumOdlaskaP"
+        android:layout_alignStart="@+id/datumOdlaskaP"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/datumOdlaskaP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/datumOdlaska"
+        android:layout_alignBottom="@+id/datumOdlaska"
+        android:layout_alignLeft="@+id/et_imeiprezime"
+        android:layout_alignStart="@+id/et_imeiprezime"
+        android:layout_marginLeft="79dp"
+        android:layout_marginStart="79dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit_apartman"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/apartman"
+        android:layout_alignBottom="@+id/apartman"
+        android:layout_toEndOf="@+id/datumDolaska"
+        android:layout_toRightOf="@+id/datumDolaska"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_ime"
+        android:layout_alignBottom="@+id/tv_ime"
+        android:layout_toEndOf="@+id/datumDolaska"
+        android:layout_toRightOf="@+id/datumDolaska"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/et_imeiprezime" />
+
+    <EditText
+        android:id="@+id/et_kontakt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_kontakt"
+        android:layout_alignBottom="@+id/tv_kontakt"
+        android:layout_toEndOf="@+id/datumDolaska"
+        android:layout_toRightOf="@+id/datumDolaska"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/et_brojosoba"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBaseline="@+id/tv_brojosoba"
+        android:layout_alignBottom="@+id/tv_brojosoba"
+        android:layout_toEndOf="@+id/datumDolaska"
+        android:layout_toRightOf="@+id/datumDolaska"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/et_napomena"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_napomena"
+        android:layout_alignBottom="@+id/tv_napomena"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/datumDolaska"
+        android:layout_toRightOf="@+id/datumDolaska" />
+
+</RelativeLayout>

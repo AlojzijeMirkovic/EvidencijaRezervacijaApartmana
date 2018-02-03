@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unios.ferit.alojzijemirkovic.evidencijarezervacija.MainActivity"
+    android:id="@+id/relativeLayout">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fab"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_toEndOf="@+id/fab"
+        android:layout_toRightOf="@+id/fab"
+        android:clickable="false"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_edit"
+        android:visibility="invisible"
+        app:fabSize="normal"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab"
+        android:layout_marginBottom="44dp"
+        android:layout_toEndOf="@+id/fab_print"
+        android:layout_toRightOf="@+id/fab_print"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fab"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_toLeftOf="@+id/fab"
+        android:layout_toStartOf="@+id/fab"
+        android:clickable="false"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_print"
+        android:visibility="invisible"
+        app:fabSize="normal"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fab"
+        android:layout_marginTop="39dp"
+        android:layout_toEndOf="@+id/fab_print"
+        android:layout_toRightOf="@+id/fab_print"
+        android:clickable="false"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:fabSize="normal"/>
+
+</RelativeLayout>

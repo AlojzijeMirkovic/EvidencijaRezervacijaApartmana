@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_edit"
+        android:title="Update"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/print"
+        android:icon="@drawable/ic_print"
+        android:title="Ispis"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_info"
+        android:iconTint="@color/colorAccent"
+        android:title="Info"
+        app:showAsAction="always" />
+
+</menu>
