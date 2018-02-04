@@ -174,7 +174,7 @@ public class UpdateRezervacije extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         final AlertDialog.Builder builder = new AlertDialog.Builder(UpdateRezervacije.this);
-        builder.setMessage("Jeste li sigurni da želite otići na početni izbornik?");
+        builder.setMessage("Jeste li sigurni da želite otići na početni zaslon?");
         builder.setCancelable(true);
         builder.setNegativeButton("Ne", new DialogInterface.OnClickListener() {
             @Override
