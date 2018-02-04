@@ -139,6 +139,7 @@ public class DodavanjeRezervacije extends AppCompatActivity {
             }
         }else if(item.getItemId() == R.id.info){
             final AlertDialog.Builder builder = new AlertDialog.Builder(DodavanjeRezervacije.this);
+            builder.setTitle("Pomoć");
             builder.setMessage("Nakon pritiska na znak \"+\" otvara se početni izbornik." + "\n\n" +
                     "Naginjanjem uređaja nazad pokreće se aktivnost za unos nove rezervacije, " +
                     "naginjanjem uređaja desno pokreće se aktivnost za uređivanje rezervacije, " +
