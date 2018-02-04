@@ -77,8 +77,7 @@ public class DodavanjeRezervacije extends AppCompatActivity {
 
         pDatumListener = new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(
-                DatePicker datePicker, int godina, int mjesec, int dan) {
+            public void onDateSet(DatePicker datePicker, int godina, int mjesec, int dan) {
                 mjesec = mjesec + 1;
                 String dDolaska = dan + "." + mjesec + "." + godina + ".";
                 datumDolaskaP.setText(dDolaska);
@@ -87,8 +86,7 @@ public class DodavanjeRezervacije extends AppCompatActivity {
 
         zDatumListener = new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(
-                DatePicker datePicker, int godina, int mjesec, int dan) {mjesec = mjesec + 1;
+            public void onDateSet(DatePicker datePicker, int godina, int mjesec, int dan) {mjesec = mjesec + 1;
                 String dOdlaska = dan + "." + mjesec + "." + godina + ".";
                 datumOdlaskaP.setText(dOdlaska);
             }
